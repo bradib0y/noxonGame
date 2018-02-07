@@ -174,7 +174,7 @@ function itemHandler(player, item) {
 
 // setup game when the web page loads
 window.onload = function () {
-  game = new Phaser.Game(1500, 700, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
+  game = new Phaser.Game(1500, 700, Phaser.AUTO, 'gamecontainer', { preload: preload, create: create, update: update, render: render });
 
   // before the game begins
   function preload() {
